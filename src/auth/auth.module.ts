@@ -27,7 +27,7 @@ export class AuthModule {
       .apply(AuthMiddleware)
       .exclude(
         exclude('auth/login'),
-        exclude('user'),
+        exclude('Users'),
       )
       .forRoutes('*');
   }
